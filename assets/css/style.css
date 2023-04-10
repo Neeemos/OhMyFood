@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/font/Roboto-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("assets/font/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif; /* Utilise Roboto comme police par défaut */
+}
+
+h1 {
+  font-family: "Shrikhand"; /* Utilise Shrikhand pour les titres */
+}/*# sourceMappingURL=style.css.map */
