@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Shrikhand;
+    src: url(sassets/font/Shrikhand-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(sassets/font/Roboto-Regular.ttf) format("truetype");
+  }
