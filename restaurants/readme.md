@@ -1,1 +1,0 @@
-Les pages d'accèss au restaurant
