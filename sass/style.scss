@@ -1,17 +1,7 @@
-$primaire : #9356DC;
-$secondaire :#FF79DA;
-$tertiaire : #99E2D0;
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Shrikhand');
-
-
-body {
-  font-family: 'Roboto', sans-serif; /* Utilise Roboto comme police par défaut */
-  max-width: 1440px;
-}
-
-h1 {
-  font-family: 'Shrikhand'; /* Utilise Shrikhand pour les titres */
-}
- 
+@import "./utils/variables";
+@import "./Vendors/font-robot";
+@import "./Vendors/font-shrikhand";
+@import "./Layout/footer";
+@import "./Layout/header";
+@import "./Layout/main";
+@import "./Base/styles";
