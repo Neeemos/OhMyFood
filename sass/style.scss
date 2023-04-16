@@ -2,15 +2,9 @@ $primaire : #9356DC;
 $secondaire :#FF79DA;
 $tertiaire : #99E2D0;
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('assets/font/Roboto-regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('assets/font/Shrikhand-Regular.ttf') format('truetype');
-}
 
 body {
   font-family: 'Roboto', sans-serif; /* Utilise Roboto comme police par défaut */
