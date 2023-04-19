@@ -1,23 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
-.footer {
-  background-color: #353535;
-  color: #FFF;
-  padding-top: 15px;
-  padding-bottom: 20px;
+body {
+  max-width: 1400px;
+  margin: auto;
+  font-family: Roboto;
 }
-.footer__title {
-  margin-left: 40px;
-  font-size: 1.1rem;
-  font-family: "Shrikhand", "regular";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  list-style-type: none;
 }
-.footer .list__icon {
-  padding-right: 2px;
-  width: 32.4px;
+
+main {
+  margin-bottom: -2%;
 }
-.footer .list__item {
-  font-size: 0.9rem;
-  padding-bottom: 5px;
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .header {
@@ -176,26 +178,24 @@ main {
   margin-top: 20px;
 }
 
-body {
-  max-width: 1400px;
-  margin: auto;
-  font-family: Roboto;
+.footer {
+  background-color: #353535;
+  color: #FFF;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  list-style-type: none;
+.footer__title {
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-family: "Shrikhand", "regular";
 }
-
-main {
-  margin-bottom: -2%;
+.footer .list__icon {
+  padding-right: 2px;
+  width: 32.4px;
 }
-
-a {
-  color: black;
-  text-decoration: none;
+.footer .list__item {
+  font-size: 0.9rem;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
