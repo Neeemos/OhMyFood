@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
+.footer {
+  background-color: #353535;
+  color: #FFF;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.footer__title {
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-family: "Shrikhand", "regular";
+}
+.footer .list__icon {
+  padding-right: 2px;
+  width: 32.4px;
+}
+.footer .list__item {
+  font-size: 0.9rem;
+  padding-bottom: 5px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -23,6 +43,10 @@
 }
 .location__text {
   margin-left: 1%;
+}
+
+main {
+  margin-bottom: -2%;
 }
 
 .discovery {
@@ -49,11 +73,12 @@
 
 .instruction {
   width: 85%;
-  padding-left: 15%;
+  padding-left: 5%;
 }
 .instruction__menu {
   display: flex;
-  padding: 0;
+  flex-direction: column;
+  padding-left: 5%;
   justify-content: space-between;
   counter-reset: menu-counter;
 }
@@ -68,9 +93,11 @@
   border-radius: 50%;
   text-align: center;
   line-height: 25px;
+  position: absolute;
+  left: 7.8%;
+  font-size: 0.7rem;
 }
 .instruction .menu__list {
-  width: 30%;
   height: 75px;
   display: flex;
   align-items: center;
@@ -82,6 +109,72 @@
   margin-left: 10%;
   margin-right: 5%;
 }
+.instruction .menu__icon--active {
+  margin-left: 10%;
+  margin-right: 5%;
+  color: #9356DC;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  padding: 5% 5% 5% 5%;
+}
+.restaurant .item__link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.restaurant .item__figure {
+  position: relative;
+  margin: 0;
+}
+.restaurant .item__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurant .item__caption {
+  display: none;
+}
+.restaurant .item__title {
+  margin: 5px 0 0 10px;
+}
+.restaurant .item__text {
+  font-size: 0.9rem;
+  margin: 5px 0 10px 10px;
+}
+.restaurant .item__icon {
+  opacity: 1;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 60px;
+  margin-top: 180px;
+}
+.restaurant .item__icon--active {
+  opacity: 0;
+  position: absolute;
+  right: 60px;
+  margin-top: 180px;
+  color: #9356DC;
+}
+.restaurant .item__new {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  border-radius: 2px;
+  width: 65px;
+  height: 25px;
+  font-size: 0.7rem;
+  color: #008766;
+  position: absolute;
+  right: 10%;
+  margin-top: 20px;
+}
 
 body {
   width: 100%;
@@ -92,6 +185,15 @@ body {
 *, ::before, ::after {
   box-sizing: border-box;
   list-style-type: none;
+}
+
+main {
+  margin-bottom: -2%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
