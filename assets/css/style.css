@@ -60,7 +60,7 @@ main {
 }
 .discovery__title {
   margin-block-start: 0;
-  padding-top: 20px;
+  padding: 20px 15px 0px 15px;
 }
 .discovery__button {
   display: inline-block;
@@ -74,37 +74,40 @@ main {
 }
 
 .instruction {
-  width: 85%;
+  width: 95%;
   padding-left: 5%;
 }
 .instruction__menu {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
-  justify-content: space-between;
+  padding-left: 0%;
   counter-reset: menu-counter;
 }
 .instruction .menu__list::before {
   counter-increment: menu-counter;
   content: counter(menu-counter);
-  display: inline-block;
-  width: 25px;
-  height: 25px;
   background-color: #9356DC;
   color: #FFF;
-  border-radius: 50%;
-  text-align: center;
   line-height: 25px;
   position: absolute;
-  left: 7.8%;
   font-size: 0.7rem;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 0.5px;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 .instruction .menu__list {
-  height: 75px;
   display: flex;
+  position: relative;
+  height: 48px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 20px;
   align-items: center;
-  border-radius: 15px;
-  margin-bottom: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 .instruction .menu__icon {
@@ -120,6 +123,9 @@ main {
 .restaurant {
   background-color: #F6F6F6;
   padding: 5% 5% 5% 5%;
+}
+.restaurant .item {
+  position: relative;
 }
 .restaurant .item__link {
   width: 100%;
