@@ -75,6 +75,7 @@ main {
 .discovery__button:hover {
   filter: drop-shadow(-5px 2px 10px rgba(241, 238, 238, 0.89));
   background: linear-gradient(to top, rgba(147, 86, 220, 0.6588235294), rgba(255, 121, 218, 0.7294117647));
+  transform: scale(1.02);
 }
 
 .instruction {
