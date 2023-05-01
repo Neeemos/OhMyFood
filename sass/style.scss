@@ -1,7 +1,6 @@
-@import "./Vendors/font-robot";
-@import "./Vendors/font-shrikhand";
+@import "./base/_fonts.scss";
 @import "./utils/variables";
-@import "./Base/styles";
-@import "./Layout/header";
-@import "./Layout/main";
-@import "./Layout/footer";
+@import "./base/styles";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer"; 

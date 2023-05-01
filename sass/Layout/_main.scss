@@ -12,6 +12,7 @@ main {
     &__title {
         margin-block-start: 0;
         padding: 20px 15px 0px 15px;
+        font-weight: 900;
     }
 
     &__button {
@@ -38,6 +39,7 @@ main {
     }
 
     .menu {
+        padding-bottom: 10px;
         &__list::before {
             counter-increment: menu-counter;
             content: counter(menu-counter);
@@ -61,24 +63,24 @@ main {
 
             display: flex;
             position: relative;
-            height: 48px;
+            height: 70px;
             border-radius: 20px;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 25px;
             align-items: center;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            background: #F7F7F7;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
         }
 
         &__icon {
-            margin-left: 10%;
-            margin-right: 5%;
+            margin-left: 5%;
+            margin-right: 2%;
+        }
+        &__icon:hover {
+            color: $color-primaire;
         }
 
-        &__icon--active {
-            margin-left: 10%;
-            margin-right: 5%;
-            color: $color-primaire
-        }
+    
 
     }
 }
@@ -90,6 +92,7 @@ main {
 
     .item {
         position: relative;
+
         &__link {
             width: 100%;
             display: flex;
@@ -113,9 +116,6 @@ main {
 
         }
 
-        &__caption {
-            display: none;
-        }
 
         &__title {
             margin: 5px 0 0 10px;
@@ -130,8 +130,8 @@ main {
             opacity: 1;
             font-size: 1.5rem;
             position: absolute;
-            right: 60px;
-            margin-top: 180px;
+            right: 7%;
+            margin-top: -53px;
         }
 
         &__icon--active {
@@ -153,8 +153,11 @@ main {
             font-size: 0.7rem;
             color: #008766;
             position: absolute;
-            right: 10%;
-            margin-top: 20px;
+            right: 5%;
+            margin-top: -200px;
+        }
+        &__card-icon {
+            display: flex;
         }
     }
 

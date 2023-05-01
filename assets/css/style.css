@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;900|Shrikhand&display=swap");
 body {
-  max-width: 1400px;
   margin: auto;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -44,7 +42,8 @@ a {
   font-size: 0.8rem;
 }
 .location__text {
-  margin-left: 1%;
+  margin-left: 2%;
+  font-size: 1.2em;
 }
 
 main {
@@ -61,6 +60,7 @@ main {
 .discovery__title {
   margin-block-start: 0;
   padding: 20px 15px 0px 15px;
+  font-weight: 900;
 }
 .discovery__button {
   display: inline-block;
@@ -83,6 +83,9 @@ main {
   padding-left: 0%;
   counter-reset: menu-counter;
 }
+.instruction .menu {
+  padding-bottom: 10px;
+}
 .instruction .menu__list::before {
   counter-increment: menu-counter;
   content: counter(menu-counter);
@@ -103,20 +106,19 @@ main {
 .instruction .menu__list {
   display: flex;
   position: relative;
-  height: 48px;
+  height: 70px;
   border-radius: 20px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
   align-items: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background: #F7F7F7;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 }
 .instruction .menu__icon {
-  margin-left: 10%;
-  margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 2%;
 }
-.instruction .menu__icon--active {
-  margin-left: 10%;
-  margin-right: 5%;
+.instruction .menu__icon:hover {
   color: #9356DC;
 }
 
@@ -145,9 +147,6 @@ main {
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
-.restaurant .item__caption {
-  display: none;
-}
 .restaurant .item__title {
   margin: 5px 0 0 10px;
 }
@@ -159,8 +158,8 @@ main {
   opacity: 1;
   font-size: 1.5rem;
   position: absolute;
-  right: 60px;
-  margin-top: 180px;
+  right: 7%;
+  margin-top: -53px;
 }
 .restaurant .item__icon--active {
   opacity: 0;
@@ -180,8 +179,11 @@ main {
   font-size: 0.7rem;
   color: #008766;
   position: absolute;
-  right: 10%;
-  margin-top: 20px;
+  right: 5%;
+  margin-top: -200px;
+}
+.restaurant .item__card-icon {
+  display: flex;
 }
 
 .footer {
@@ -202,6 +204,9 @@ main {
 .footer .list__item {
   font-size: 0.9rem;
   padding-bottom: 5px;
+}
+.footer .list__link {
+  color: #FFF !important;
 }
 
 /*# sourceMappingURL=style.css.map */
