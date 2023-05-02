@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;900|Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100;900;bolder|Shrikhand&display=swap");
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -60,7 +60,10 @@ main {
 .discovery__title {
   margin-block-start: 0;
   padding: 20px 15px 0px 15px;
-  font-weight: 900;
+  font-weight: bolder;
+}
+.discovery__text {
+  font-weight: 100;
 }
 .discovery__button {
   display: inline-block;
@@ -186,19 +189,14 @@ main {
   font-size: 0.9rem;
   margin: 5px 0 10px 10px;
 }
-.restaurant .item__icon {
-  opacity: 1;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 7%;
-  margin-top: -53px;
+.restaurant .item__card-icon:hover {
+  display: flex;
 }
-.restaurant .item__icon--active {
+.restaurant .item__card-icon:hover__icon--actove:hover {
+  opacity: 1;
+}
+.restaurant .item__card-icon:hover__icon {
   opacity: 0;
-  position: absolute;
-  right: 60px;
-  margin-top: 180px;
-  color: #9356DC;
 }
 .restaurant .item__new {
   background-color: #99E2D0;
@@ -212,10 +210,29 @@ main {
   color: #008766;
   position: absolute;
   right: 5%;
-  margin-top: -200px;
+  top: 5%;
 }
-.restaurant .item__card-icon {
-  display: flex;
+.restaurant .item__icon {
+  opacity: 1;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 7%;
+  bottom: 15%;
+  transition: opacity 0.2s ease-out;
+}
+.restaurant .item__icon:hover {
+  opacity: 0;
+}
+.restaurant .item__icon--active {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 7%;
+  bottom: 15%;
+  opacity: 0;
+  transform: scale(1.2);
+}
+.restaurant .item__icon--active:hover {
+  opacity: 1;
 }
 
 .footer {
