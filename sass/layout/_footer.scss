@@ -1,14 +1,9 @@
-$breakpoint: (
-    mobile: 768px,
-    tablet: 992px,
-);
-
 .footer {
     background-color: #353535;
     color:#FFF;
     padding-top: 15px;
     padding-bottom: 20px;
-    @media screen and (min-width: map-get($breakpoint, tablet)) {
+    @include media-td {
         display: flex;
         flex-direction: row-reverse;
     }
@@ -18,12 +13,12 @@ $breakpoint: (
         margin-left: 40px;
         font-size: 1.1rem;
         font-family: 'Shrikhand','regular';
-        @media screen and (min-width: map-get($breakpoint, tablet)) {
+        @include media-td {
             margin-right: 40px;
         }
     }
     .list {
-        @media screen and (min-width: map-get($breakpoint, tablet)) {
+        @include media-td {
             display: flex;
             justify-content: space-between;
             gap: 25px;

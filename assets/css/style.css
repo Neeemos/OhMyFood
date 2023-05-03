@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100;900;bolder|Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,900,300,400,500,bolder,lighter|Shrikhand&display=swap");
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -42,8 +42,11 @@ a {
   font-size: 0.8rem;
 }
 .location__text {
-  margin-left: 2%;
-  font-size: 1.2em;
+  margin-left: 15px;
+  font-size: 1.3em;
+}
+.location__icon {
+  font-size: 1.3em;
 }
 
 main {
@@ -60,15 +63,15 @@ main {
 .discovery__title {
   margin-block-start: 0;
   padding: 20px 15px 0px 15px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 .discovery__text {
-  font-weight: 100;
+  font-weight: lighter;
 }
 .discovery__button {
   display: inline-block;
   padding: 13px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA 95%);
   color: #FFF;
   border: none;
   border-radius: 40px;
@@ -134,11 +137,15 @@ main {
   }
 }
 .instruction .menu__icon {
-  margin-left: 5%;
-  margin-right: 2%;
+  margin-left: 10%;
+  margin-right: 5%;
+  color: #7E7E7E;
 }
 .instruction .menu__icon:hover {
   color: #9356DC;
+}
+.instruction .menu__link {
+  font-weight: 500;
 }
 
 .restaurant {
@@ -161,7 +168,8 @@ main {
 }
 @media screen and (min-width: 992px) {
   .restaurant .item {
-    flex: 40%;
+    flex: 30%;
+    margin-right: 10%;
   }
 }
 .restaurant .item__link {
