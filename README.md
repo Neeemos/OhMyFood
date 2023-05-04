@@ -35,7 +35,7 @@ To deploy prod environnement
   run sass-prod
 ```
 ## Demo
-Link : https://github.com/Neeemos/OhMyFood
+Link : [website](https://neeemos.github.io/OhMyFood/)
 ## Authors
 
 - [@Neeemos](https://github.com/Neeemos)
