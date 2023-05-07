@@ -1,22 +1,9 @@
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-  }
-  .btn {
-    color: red;
-  }
-  .url {
-    color: blue;
-    
-  }
-}
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./utils/breakpoint";
+@import "./base/styles";
+@import "./layout/header";
+@import "./components/loader";
+@import "./components/heart";
+@import "./page/index";
+@import "./layout/footer"; 

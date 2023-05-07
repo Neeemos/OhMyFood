@@ -1,0 +1,39 @@
+.footer {
+    background-color: #353535;
+    color:#FFF;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    @include media-td {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+   
+
+    &__title {
+        margin-left: 40px;
+        font-size: 1.1rem;
+        font-family: 'Shrikhand','regular';
+        @include media-td {
+            margin-right: 40px;
+        }
+    }
+    .list {
+        @include media-td {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+        }
+        
+        &__icon {
+            padding-right: 2px;
+            width: 32.4px;
+        }
+        &__item {
+            font-size: 0.9rem;
+            padding-bottom: 5px;
+        }
+        &__link {
+            color: #FFF!important;
+        }
+    }
+}

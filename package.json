@@ -1,0 +1,24 @@
+{
+  "name": "ohmyfood-sass",
+  "version": "1.0.0",
+  "description": "Projet 3 OC - Ohmyfood - sass",
+  "main": "index.html",
+  
+  "scripts": {
+    "sass-dev": "sass --watch ./sass/style.scss:./assets/css/style.css",
+    "sass-prod": "sass --style=compressed ./sass/style.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neeemos/OhMyFood.git"
+  },
+  "author": "Neeemos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neeemos/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Neeemos/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}
