@@ -10,22 +10,23 @@
 
 <body>
     <a href="./../index.html">
-        <header>
-            <h1>Ohmyfood</h1>
+        <header class="headerBar">
+            <h1 class="headerBar__title">Ohmyfood</h1>
         </header>
     </a>
 
     <div class="banner">
         <img class="banner__image" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette de salade et de saumon fraîchement préparée, arrivant à table">
     </div>
-    <div class="header">
-        <h2 class="header__title">La palette du goût</h2>
+    <div class="headerMenu">
+        <h2 class="headerMenu__title">La palette du goût </h2>
+        <i class="fa-regular fa-heart item__icon" style="color: red"></i>
     </div>
 
     <main>
         <section class="menu">
             <div class="menu__list">
-                <h3>Entrées</h3>
+                <h3 class="menu__title">Entrées</h3>
                 <div class="menu__item item">
                     <div class="item__info">
                         <h4 class="item__title">Fricassée d'escargot</h4>
@@ -125,11 +126,12 @@
                     </div>
                 </div>
             </div>
+            <button class="commander">Commander</button>
         </section>
 
-        <div class="button-commander">
-            <button class="commander">Commander</button>
-        </div>
+       
+           
+       
 
     </main>
 
@@ -143,4 +145,6 @@
     
         </ul>
       </footer>
+
+      <script src="https://kit.fontawesome.com/89fa042510.js" crossorigin="anonymous"></script>
 </body> 
