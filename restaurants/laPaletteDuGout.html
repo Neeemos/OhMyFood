@@ -4,37 +4,143 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>OhMyFood | Menu La Palette du Gout</title>
 </head>
 
 <body>
-    <div class="loader-container">
-        <div class="loader-spinner loader-spinner--actif">
-        </div>
+    <a href="./../index.html">
+        <header>
+            <h1>Ohmyfood</h1>
+        </header>
+    </a>
+
+    <div class="banner">
+        <img class="banner__image" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette de salade et de saumon fraîchement préparée, arrivant à table">
     </div>
-    <header class="header">
-        <img class="header__logo" src="../assets/images/logo/ohmyfood.png" alt="logo officiel Ohmyfood">
-    </header>
+    <div class="header">
+        <h2 class="header__title">La palette du goût</h2>
+    </div>
+
     <main>
-        <div class="background">
-            <img class="background__image" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="logo officiel Ohmyfood">
-        </div>
         <section class="menu">
-            <div clas="menu__header">
-                <h1>La palette du goût</h1>
-                <div class="item__card-icon">
-                    <i class="fa-solid fa-heart item__icon item__icon--active"></i>
-                    <i class="fa-regular fa-heart item__icon"></i>
+            <div class="menu__list">
+                <h3>Entrées</h3>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4 class="item__title">Fricassée d'escargot</h4>
+                        <p class="item__text">Au piment d'espelette</p>
+                    </div>
+                    <span class="item__price">25€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4 class="item__title">Foie gras de canard mi-cuit</h4>
+                        <p class="item__text">Et ses copeaux de truffe noire</p>
+                    </div>
+                    <span class="item__price">35€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4 class="item__title">Oeuf au plat</h4>
+                        <p class="item__text">Assaisonné à la truffe sur lit de caviar</p>
+                    </div>
+                    <span class="item__price">25€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
-            <h2>Entrées</h2>
-          
+
+            <div class="menu__list">
+                <h3>Plats</h3>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4>Filet de boeuf au herbes</h4>
+                        <p>Accompagné de sa ribambelle de léguments</p>
+                    </div>
+                    <span class="item__price">40€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4>Parmentier de queue de boeuf</h4>
+                        <p>A la truffe noir sur sa purée de panais</p>
+                    </div>
+                    <span class="item__price">35€</span>
+                    <div class="item_check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item_info">
+                        <h4>Filet de turbo</h4>
+                        <p>Aux agrumes</p>
+                    </div>
+                    <span class="item__price">44€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__list">
+                <h3>Déserts</h3>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4>Paris-Brest</h4>
+                        <p>Revisité</p>
+                    </div>
+                    <span class="item__price">18€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4>Macaron au chocolat d'exception</h4>
+                        <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <span class="item__price">22€</span>
+                    <div class="item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__item item">
+                    <div class="item__info">
+                        <h4>Mousse au chocolat</h4>
+                        <p>Au piment d'espelette et à la truffe noire</p>
+                    </div>
+                    <span class=item__price">23€</span>
+                    <div class=item__check">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <div class="button-commander">
+            <button class="commander">Commander</button>
+        </div>
+
     </main>
+
+    <footer class="footer">
+        <h2 class="footer__title">Ohmyfood</h2>
+        <ul class="footer__list list">
+          <li class="list__item"><i class="fa-solid fa-utensils list__icon"></i>Proposer un restaurant</li>
+          <li class="list__item"><i class="fa-solid fa-handshake-angle list__icon"></i>Devenir partenaire</li>
+          <li class="list__item">Mentions légales</li>
+          <li class="list__item"><a href="mailto:neeemos01@gmail.com" class="list__link">Contact </a></li>
+    
+        </ul>
+      </footer>
 </body>
-
-<footer>
-
-</footer>

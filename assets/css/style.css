@@ -322,6 +322,13 @@ main {
   opacity: 1;
 }
 
+.banner__image {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 .footer {
   background-color: #353535;
   color: #FFF;
