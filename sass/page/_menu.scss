@@ -1,113 +1,148 @@
-*, ::before, ::after {
-margin: 0;
-}
-.headerBar {
-    font-family: "shrikhand", "cursive";
-    text-align: center;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-    position: relative;
-    margin: 0;
-    padding: 0;
-
-    &::before {
-        position: absolute;
-        font-family: "font Awesome 5 free";
-        font-weight: 900;
-        content: "\f060";
-        left: 25px;
-        bottom: 30%;
-        font-size: 25px;
-    } 
-
-    &__title {
-        font-weight: normal;
-        padding: 15px;
-        font-size: 35px;
-        background-color: white;
-    }
-}
-
-.banner {
-
-    &__image {
-        display: block;
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-}
-
-.headerMenu {
-    font-family: "Shrikhand", "cursive";
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    font-weight: normal;
-    position: relative;
-    border-radius: 35px 35px 0 0;
-    background-color: #F6F6F6;
-    margin: -40px auto;
-    max-width: 1400px;
-
-}
-
-.menu {
-    max-width: 1400px;
-    background-color: $color-grey;
-    margin: 0 auto;
-    padding: 30px;
-    border: 20px 20px 20px 20px;
-    padding-bottom: 5%;
-
-    &__listing {
-        display: flex;
-        flex-direction: column;
+    ::before,
+    ::after {
+        margin: 0;
     }
 
-    &__title {
-        text-transform: uppercase;
-        font-weight: 400;
+    .headerBar {
+        font-family: "shrikhand", "cursive";
+        text-align: center;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
         position: relative;
-        margin-bottom: 15px;
-        margin-left: 11px;
+        margin: 0;
+        padding: 0;
+
+        &::before {
+            position: absolute;
+            font-family: "font Awesome 5 free";
+            font-weight: 900;
+            content: "\f060";
+            left: 25px;
+            bottom: 30%;
+            font-size: 25px;
+        }
+
+        &__title {
+            font-weight: normal;
+            padding: 15px;
+            font-size: 35px;
+            background-color: white;
+            margin: 0;
+        }
     }
 
-    &__title::after {
-        content: "";
-        position: absolute;
-        top: 1.5rem;
-        left: 0rem;
-        height: 0.25rem;
-        width: 3rem;
-        background-color: #99e2D0;
+    .banner {
+
+        &__image {
+            display: block;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
     }
 
-}
-
-.item {
-    display: flex;
-    background-color: white;
-    border-radius: 15px;
-    margin: 0.5rem;
-    line-height: 1.15;
-
-    &__info {
-        padding: 0.6rem 0.6rem 0 0.6rem;
-    }
-
-    &__price {
-        margin-left: auto;
-        font-weight: 900;
-        padding: 1rem;
+    .headerMenu {
+        font-family: "Shrikhand", "cursive";
         display: flex;
-        align-items: flex-end;
+        justify-content: center;
+        padding: 0.8rem;
+        font-weight: normal;
+        position: relative;
+        border-radius: 35px 35px 0 0;
+        background-color: #F6F6F6;
+        margin: -40px auto;
+        max-width: 1400px;
+
+        &__title {
+            margin: 0;
+            font-size: 1rem;
+            @include media-td {
+                font-size: 1.5rem;
+            }
+        }
+
+        .item__card-icon {
+            position: relative;
+            left: 15%;
+            margin-top: 25px;
+
+
+            @include media-td {
+                position: relative;
+                left: 3%;
+                margin-top: 25px;
+            }
+        }
+
     }
 
-    &__title {
-        margin: 0;
+    .page-menu {
+        max-width: 1400px;
+        background-color: $color-grey;
+        margin: 0 auto;
+        padding: 30px;
+        border: 20px 20px 20px 20px;
+        padding-bottom: 5%;
+
+        &__listing {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 15px;
+            margin-left: 11px;
+        }
+
+        &__title::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0rem;
+            height: 0.25rem;
+            width: 3rem;
+            background-color: #99e2D0;
+        }
+        .discovery {
+            &__button {
+                position:relative;
+                width: 160px;
+                height: 50px;
+            }
+        }
+
     }
 
-    &_texte {
-        margin: 0;
+    .item {
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        margin: 0.5rem;
+        line-height: 1.15;
+
+        &__info {
+            padding: 0.6rem 0.6rem 0 0.6rem;
+        }
+
+        &__price {
+            margin-left: auto;
+            font-weight: 900;
+            padding: 1rem;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &__title {
+            margin: 0;
+        }
+
+        &__texte {
+            margin: 0;
+        }
+        &__block {
+            justify-content: center;
+            display: flex;
+        }
     }
-}

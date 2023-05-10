@@ -138,6 +138,14 @@ a {
 .item__icon--active:hover {
   opacity: 1;
 }
+.item__card-icon .fa-solid {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.item__card-icon:hover .fa-solid {
+  opacity: 1;
+}
 
 main {
   margin-bottom: -2%;
@@ -314,16 +322,9 @@ main {
   top: 5%;
   padding: 8px;
 }
-.restaurant .item__card-icon .fa-solid {
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.restaurant .item__card-icon:hover .fa-solid {
-  opacity: 1;
-}
 
-*, ::before, ::after {
+::before,
+::after {
   margin: 0;
 }
 
@@ -349,6 +350,7 @@ main {
   padding: 15px;
   font-size: 35px;
   background-color: white;
+  margin: 0;
 }
 
 .banner__image {
@@ -362,7 +364,7 @@ main {
   font-family: "Shrikhand", "cursive";
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 0.8rem;
   font-weight: normal;
   position: relative;
   border-radius: 35px 35px 0 0;
@@ -370,8 +372,29 @@ main {
   margin: -40px auto;
   max-width: 1400px;
 }
+.headerMenu__title {
+  margin: 0;
+  font-size: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .headerMenu__title {
+    font-size: 1.5rem;
+  }
+}
+.headerMenu .item__card-icon {
+  position: relative;
+  left: 15%;
+  margin-top: 25px;
+}
+@media screen and (min-width: 992px) {
+  .headerMenu .item__card-icon {
+    position: relative;
+    left: 3%;
+    margin-top: 25px;
+  }
+}
 
-.menu {
+.page-menu {
   max-width: 1400px;
   background-color: #F6F6F6;
   margin: 0 auto;
@@ -379,18 +402,18 @@ main {
   border: 20px 20px 20px 20px;
   padding-bottom: 5%;
 }
-.menu__listing {
+.page-menu__listing {
   display: flex;
   flex-direction: column;
 }
-.menu__title {
+.page-menu__title {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
   margin-bottom: 15px;
   margin-left: 11px;
 }
-.menu__title::after {
+.page-menu__title::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -398,6 +421,11 @@ main {
   height: 0.25rem;
   width: 3rem;
   background-color: #99e2D0;
+}
+.page-menu .discovery__button {
+  position: relative;
+  width: 160px;
+  height: 50px;
 }
 
 .item {
@@ -420,8 +448,12 @@ main {
 .item__title {
   margin: 0;
 }
-.item_texte {
+.item__texte {
   margin: 0;
+}
+.item__block {
+  justify-content: center;
+  display: flex;
 }
 
 .footer {

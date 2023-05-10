@@ -202,20 +202,7 @@ main {
             padding: 8px;
         }
 
-        &__card-icon {
-          
-            .fa-solid {
-                z-index: 1;
-                opacity: 0;
-                transition: opacity 0.5s ease;
-            }
-
-            &:hover {
-                .fa-solid {
-                    opacity: 1;
-                }
-            }
-        }
+       
 
 
 
