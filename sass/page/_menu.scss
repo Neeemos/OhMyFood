@@ -55,6 +55,7 @@
         &__title {
             margin: 0;
             font-size: 1rem;
+
             @include media-td {
                 font-size: 1.5rem;
             }
@@ -105,44 +106,46 @@
             width: 3rem;
             background-color: #99e2D0;
         }
+
         .discovery {
             &__button {
-                position:relative;
+                position: relative;
                 width: 160px;
                 height: 50px;
             }
         }
 
-    }
-
-    .item {
-        display: flex;
-        background-color: white;
-        border-radius: 15px;
-        margin: 0.5rem;
-        line-height: 1.15;
-
-        &__info {
-            padding: 0.6rem 0.6rem 0 0.6rem;
-        }
-
-        &__price {
-            margin-left: auto;
-            font-weight: 900;
-            padding: 1rem;
+        .item {
             display: flex;
-            align-items: flex-end;
+            background-color: white;
+            border-radius: 15px;
+            margin: 0.5rem;
+            line-height: 1.15;
+            padding: 0.9rem;
+
+            &__info {
+                padding: 0.6rem 0.6rem 0 0.6rem;
+            }
+
+            &__price {
+                margin-left: auto;
+                font-weight: 900;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            &__title {
+                margin: 0;
+            }
+
+            &__text {
+                margin: 0;
+            }
+
+            &__block {
+                justify-content: center;
+                display: flex;
+            }
         }
 
-        &__title {
-            margin: 0;
-        }
-
-        &__texte {
-            margin: 0;
-        }
-        &__block {
-            justify-content: center;
-            display: flex;
-        }
     }

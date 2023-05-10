@@ -427,31 +427,30 @@ main {
   width: 160px;
   height: 50px;
 }
-
-.item {
+.page-menu .item {
   display: flex;
   background-color: white;
   border-radius: 15px;
   margin: 0.5rem;
   line-height: 1.15;
+  padding: 0.9rem;
 }
-.item__info {
+.page-menu .item__info {
   padding: 0.6rem 0.6rem 0 0.6rem;
 }
-.item__price {
+.page-menu .item__price {
   margin-left: auto;
   font-weight: 900;
-  padding: 1rem;
   display: flex;
   align-items: flex-end;
 }
-.item__title {
+.page-menu .item__title {
   margin: 0;
 }
-.item__texte {
+.page-menu .item__text {
   margin: 0;
 }
-.item__block {
+.page-menu .item__block {
   justify-content: center;
   display: flex;
 }
