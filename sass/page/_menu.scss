@@ -1,3 +1,6 @@
+*, ::before, ::after {
+margin: 0;
+}
 .headerBar {
     font-family: "shrikhand", "cursive";
     text-align: center;
@@ -7,10 +10,13 @@
     padding: 0;
 
     &::before {
+        position: absolute;
+        font-family: "font Awesome 5 free";
+        font-weight: 900;
         content: "\f060";
-        font-family: "Font Awesome 6 Solid";
-        display: inline-block;
-        margin-right: 10px;
+        left: 25px;
+        bottom: 30%;
+        font-size: 25px;
     } 
 
     &__title {

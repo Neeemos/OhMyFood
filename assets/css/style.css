@@ -323,6 +323,10 @@ main {
   opacity: 1;
 }
 
+*, ::before, ::after {
+  margin: 0;
+}
+
 .headerBar {
   font-family: "shrikhand", "cursive";
   text-align: center;
@@ -332,10 +336,13 @@ main {
   padding: 0;
 }
 .headerBar::before {
+  position: absolute;
+  font-family: "font Awesome 5 free";
+  font-weight: 900;
   content: "\f060";
-  font-family: "Font Awesome 6 Solid";
-  display: inline-block;
-  margin-right: 10px;
+  left: 25px;
+  bottom: 30%;
+  font-size: 25px;
 }
 .headerBar__title {
   font-weight: normal;
