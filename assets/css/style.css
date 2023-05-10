@@ -444,6 +444,9 @@ main {
   display: flex;
   align-items: flex-end;
 }
+.page-menu .item__check {
+  display: none;
+}
 .page-menu .item__title {
   margin: 0;
 }
