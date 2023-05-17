@@ -34,7 +34,6 @@ main {
     &__button:hover {
         filter: drop-shadow(-5px 2px 10px rgba(241, 238, 238, 0.89));
         background: linear-gradient(to top, #9356dca8, #ff79daba);
-        transform: scale(1.02);
     }
 }
 
@@ -110,8 +109,7 @@ main {
         .menu__list {
             &:hover {
 
-                .menu__icon,
-                .menu__link {
+                .menu__icon {
                     color: #9356DC;
                 }
             }
@@ -138,6 +136,7 @@ main {
         padding: 2% 0% 5% 0%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 15px;
         margin: 0 auto;
         max-width: 1400px;
@@ -152,8 +151,7 @@ main {
         position: relative;
 
         @include media-td {
-            flex: 30%;
-            margin-right: 10%;
+            flex: 35%;
         }
 
         &__link {
