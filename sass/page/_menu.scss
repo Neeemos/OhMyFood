@@ -1,7 +1,6 @@
     ::before,
     ::after {
         margin: 0;
-        position: relative;
     }
 
     .mainMenu {
@@ -133,11 +132,10 @@
             border-radius: 15px;
             margin: 0.5rem;
             line-height: 1.15;
-            padding: 0.9rem;
             animation: slideIn 1.5s ease-out forwards;
 
             &__info {
-                padding: 0.6rem 0.6rem 0 0.6rem;
+                padding: 0.9rem 0 0.9rem 0.9rem;
             }
 
             &__price {
@@ -148,7 +146,29 @@
             }
 
             &__check {
+                //   display: none
+                position: initial;
+                justify-content: center;
+                border-radius: 0 1rem 1rem 0;
+                background-color: #99e2D0;
+                width: 5rem;
+                opacity: 1; // Initial opacity set to 0
                 display: none;
+                margin-right: -3rem;
+                transition-duration: 500ms;
+                transition-property: margin-right;
+
+                .fas.fa-check {
+                    top: 35%;
+                    position: fixed;
+
+                }
+            }
+
+            &:hover .item__check {
+                animation: slideRight 3s;
+                display: flex;
+
             }
 
             &__title {

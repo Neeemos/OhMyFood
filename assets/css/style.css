@@ -155,6 +155,14 @@ a {
     transform: translateY(0);
   }
 }
+@keyframes slideRight {
+  0% {
+    margin-right: -3rem;
+  }
+  100% {
+    margin-right: 0rem;
+  }
+}
 main {
   margin-bottom: -2%;
 }
@@ -335,7 +343,6 @@ main {
 ::before,
 ::after {
   margin: 0;
-  position: relative;
 }
 
 .mainMenu {
@@ -453,11 +460,10 @@ main {
   border-radius: 15px;
   margin: 0.5rem;
   line-height: 1.15;
-  padding: 0.9rem;
   animation: slideIn 1.5s ease-out forwards;
 }
 .page-menu .item__info {
-  padding: 0.6rem 0.6rem 0 0.6rem;
+  padding: 0.9rem 0 0.9rem 0.9rem;
 }
 .page-menu .item__price {
   margin-left: auto;
@@ -466,7 +472,24 @@ main {
   align-items: flex-end;
 }
 .page-menu .item__check {
+  position: initial;
+  justify-content: center;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99e2D0;
+  width: 5rem;
+  opacity: 1;
   display: none;
+  margin-right: -3rem;
+  transition-duration: 500ms;
+  transition-property: margin-right;
+}
+.page-menu .item__check .fas.fa-check {
+  top: 35%;
+  position: fixed;
+}
+.page-menu .item:hover .item__check {
+  animation: slideRight 3s;
+  display: flex;
 }
 .page-menu .item__title {
   margin: 0;
