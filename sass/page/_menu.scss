@@ -1,6 +1,12 @@
     ::before,
     ::after {
         margin: 0;
+        position: relative;
+    }
+
+    .mainMenu {
+        margin-bottom: 0%;
+        margin-top: -35px;
     }
 
     .headerBar {
@@ -82,7 +88,13 @@
         margin: 0 auto;
         padding: 30px;
         border: 20px 20px 20px 20px;
-        padding-bottom: 5%;
+        position: relative;
+        border-radius: 35px 35px 0 0;
+
+        &__restaurant {
+            text-align: center;
+            font-size: 1.5rem;
+        }
 
         &__listing {
             display: flex;
@@ -122,6 +134,7 @@
             margin: 0.5rem;
             line-height: 1.15;
             padding: 0.9rem;
+            animation: slideIn 1.5s ease-out forwards;
 
             &__info {
                 padding: 0.6rem 0.6rem 0 0.6rem;
@@ -133,9 +146,11 @@
                 display: flex;
                 align-items: flex-end;
             }
+
             &__check {
                 display: none;
             }
+
             &__title {
                 margin: 0;
             }
@@ -147,6 +162,7 @@
             &__block {
                 justify-content: center;
                 display: flex;
+                margin-top: 2%;
             }
         }
 
