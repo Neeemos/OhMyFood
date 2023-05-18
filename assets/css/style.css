@@ -157,7 +157,7 @@ a {
 }
 @keyframes slideRight {
   0% {
-    margin-right: -3rem;
+    margin-right: -4.8rem;
   }
   100% {
     margin-right: 0rem;
@@ -382,40 +382,6 @@ main {
   object-fit: cover;
 }
 
-.headerMenu {
-  font-family: "Shrikhand", "cursive";
-  display: flex;
-  justify-content: center;
-  padding: 0.8rem;
-  font-weight: normal;
-  position: relative;
-  border-radius: 35px 35px 0 0;
-  background-color: #F6F6F6;
-  margin: -40px auto;
-  max-width: 1400px;
-}
-.headerMenu__title {
-  margin: 0;
-  font-size: 1rem;
-}
-@media screen and (min-width: 992px) {
-  .headerMenu__title {
-    font-size: 1.5rem;
-  }
-}
-.headerMenu .item__card-icon {
-  position: relative;
-  left: 15%;
-  margin-top: 25px;
-}
-@media screen and (min-width: 992px) {
-  .headerMenu .item__card-icon {
-    position: relative;
-    left: 3%;
-    margin-top: 25px;
-  }
-}
-
 .page-menu {
   max-width: 1400px;
   background-color: #F6F6F6;
@@ -424,6 +390,11 @@ main {
   border: 20px 20px 20px 20px;
   position: relative;
   border-radius: 35px 35px 0 0;
+}
+.page-menu__header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 .page-menu__restaurant {
   text-align: center;
@@ -447,7 +418,18 @@ main {
   left: 0rem;
   height: 0.25rem;
   width: 3rem;
-  background-color: #99e2D0;
+  background-color: #99E2D0;
+}
+.page-menu .item__card-icon {
+  position: relative;
+  margin-left: 8%;
+  top: -10px;
+}
+@media screen and (min-width: 992px) {
+  .page-menu .item__card-icon {
+    margin-left: 4%;
+    top: -10px;
+  }
 }
 .page-menu .discovery__button {
   position: relative;
@@ -460,7 +442,8 @@ main {
   border-radius: 15px;
   margin: 0.5rem;
   line-height: 1.15;
-  animation: slideIn 1.5s ease-out forwards;
+  animation: slideIn 0.5s ease-out forwards;
+  overflow: hidden;
 }
 .page-menu .item__info {
   padding: 0.9rem 0 0.9rem 0.9rem;
@@ -470,25 +453,28 @@ main {
   font-weight: 900;
   display: flex;
   align-items: flex-end;
+  margin-right: 1%;
 }
 .page-menu .item__check {
   position: initial;
   justify-content: center;
   border-radius: 0 1rem 1rem 0;
-  background-color: #99e2D0;
+  background-color: #99E2D0;
   width: 5rem;
   opacity: 1;
   display: none;
-  margin-right: -3rem;
-  transition-duration: 500ms;
-  transition-property: margin-right;
 }
 .page-menu .item__check .fas.fa-check {
-  top: 35%;
+  top: 30%;
   position: fixed;
+  border: 2px solid white;
+  border-radius: 100%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 4px;
 }
 .page-menu .item:hover .item__check {
-  animation: slideRight 3s;
+  animation: slideRight 1s;
   display: flex;
 }
 .page-menu .item__title {
