@@ -118,11 +118,21 @@
             border-radius: 15px;
             margin: 0.5rem;
             line-height: 1.15;
-            animation: slideIn 0.5s ease-out forwards;
+            $item-count: 9;
+            opacity: 0;
+
+            @for $i from 1 through $item-count {
+                &:nth-child(#{$i}) {
+                    animation: slideIn 0.5s ease-out forwards ($i * 0.2s);
+                }
+            }
+
             overflow: hidden;
 
             &__info {
                 padding: 0.9rem 0 0.9rem 0.9rem;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
             &__price {
@@ -162,10 +172,15 @@
 
             &__title {
                 margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             &__text {
                 margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
             }
 
             &__block {

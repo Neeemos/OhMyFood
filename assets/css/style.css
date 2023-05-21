@@ -67,35 +67,48 @@ a {
 .item__icon {
   font-size: 1.5rem;
   position: absolute;
-  right: 7%;
-  bottom: 15%;
+  right: 5%;
+  bottom: 10%;
   background-color: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity 0.5s ease-out;
 }
 .item__icon:hover {
-  opacity: 0;
   background-image: linear-gradient(180deg, #9356DC 10%, #FF79DA 60%);
+  background-color: black;
 }
 .item__icon--active {
   font-size: 1.5rem;
   position: absolute;
-  right: 7%;
-  bottom: 15%;
+  right: 5%;
+  bottom: 10%;
   opacity: 0;
 }
 .item__icon--active:hover {
   opacity: 1;
+  animation: fillHeart 4s forwards;
+  background-color: transparent;
+  border-color: transparent; /* Set border-color to transparent */
 }
-.item__card-icon .fa-solid {
+.item__card-icon .item__icon--active {
   z-index: 1;
   opacity: 0;
 }
-.item__card-icon:hover .fa-solid {
+.item__card-icon:hover .item__icon--active {
   opacity: 1;
+  z-index: 2;
+  background-color: transparent;
+  border-color: transparent; /* Set border-color to transparent */
 }
 
+@keyframes fillHeart {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .discovery__button {
   display: inline-block;
   padding: 13px;
@@ -109,7 +122,6 @@ a {
 }
 .discovery__button:hover {
   opacity: 0.8;
-  transform: scale(1.03);
 }
 
 @-webkit-keyframes loading {
@@ -160,6 +172,14 @@ a {
   }
   100% {
     margin-right: 0rem;
+  }
+}
+@keyframes progresssion {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 main {
@@ -291,6 +311,10 @@ main {
   }
   .restaurant__title {
     width: 100%;
+  }
+  .restaurant__row {
+    width: 45%;
+    margin-bottom: 10px;
   }
 }
 .restaurant .item {
@@ -440,11 +464,40 @@ main {
   border-radius: 15px;
   margin: 0.5rem;
   line-height: 1.15;
-  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
   overflow: hidden;
+}
+.page-menu .item:nth-child(1) {
+  animation: slideIn 0.5s ease-out forwards 0.2s;
+}
+.page-menu .item:nth-child(2) {
+  animation: slideIn 0.5s ease-out forwards 0.4s;
+}
+.page-menu .item:nth-child(3) {
+  animation: slideIn 0.5s ease-out forwards 0.6s;
+}
+.page-menu .item:nth-child(4) {
+  animation: slideIn 0.5s ease-out forwards 0.8s;
+}
+.page-menu .item:nth-child(5) {
+  animation: slideIn 0.5s ease-out forwards 1s;
+}
+.page-menu .item:nth-child(6) {
+  animation: slideIn 0.5s ease-out forwards 1.2s;
+}
+.page-menu .item:nth-child(7) {
+  animation: slideIn 0.5s ease-out forwards 1.4s;
+}
+.page-menu .item:nth-child(8) {
+  animation: slideIn 0.5s ease-out forwards 1.6s;
+}
+.page-menu .item:nth-child(9) {
+  animation: slideIn 0.5s ease-out forwards 1.8s;
 }
 .page-menu .item__info {
   padding: 0.9rem 0 0.9rem 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .page-menu .item__price {
   margin-left: auto;
@@ -477,9 +530,13 @@ main {
 }
 .page-menu .item__title {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page-menu .item__text {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page-menu .item__block {
   justify-content: center;
