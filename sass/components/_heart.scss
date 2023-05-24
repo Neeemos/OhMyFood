@@ -1,73 +1,56 @@
-.fill_heart {
+.page-menu__heart {
   position: absolute;
   right: 5%;
   bottom: 10%;
   font-size: 0.7rem;
+  cursor: pointer;
 
   &:hover {
-    .heart-1 {
-      font-weight: 700;
+    .heart {
+      &__1 {
+        font-weight: 700;
+      }
     }
 
-    .heart-2 {
-      -webkit-animation: fill 0.5s ease-out forwards;
-      animation: fill 0.5s ease-out forwards;
+    .heart {
+      &__2 {
+        -webkit-animation: fill 0.5s ease-out forwards;
+        animation: fill 0.5s ease-out forwards;
+        font-weight: 800;
+      }
     }
-  }
-}
-
-.heart-1 {
-  position: absolute;
-  color: black;
-  font-size: 1.5rem;
-  display: block;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-
-  &:before {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    background: none;
-    display: inline-block;
-    font-weight: bold;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
-.heart-2 {
-  font-size: 1.5rem;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-
-  &:before {
-    display: inline-block;
-    background: -webkit-linear-gradient(238deg, #9b59dc 0%, #a77fd8 39%, #ff79da 85%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background: transparent;
   }
 }
 
 .heart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h4 {
-    margin: 0;
+  &__1 {
+    position: absolute;
+    color: black;
     font-size: 1.5rem;
-  }
-}
+    display: block;
+   
+    opacity: 1;
 
-.fill {
-  &:hover {
+    &:before {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      background: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+
+  &__2 {
+    font-size: 1.5rem;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    cursor: pointer;
-    background-blend-mode: lighten;
+    opacity: 0;
+
+    &:before {
+      display: inline-block;
+      background: -webkit-linear-gradient(238deg, #9b59dc 0%, #a77fd8 39%, #ff79da 85%);
+      -webkit-background-clip: text;
+    }
   }
 }

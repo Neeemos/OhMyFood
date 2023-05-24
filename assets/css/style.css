@@ -89,69 +89,47 @@ a {
   animation: spin 2s linear infinite;
 }
 
-.fill_heart {
+.page-menu__heart {
   position: absolute;
   right: 5%;
   bottom: 10%;
   font-size: 0.7rem;
+  cursor: pointer;
 }
-.fill_heart:hover .heart-1 {
+.page-menu__heart:hover .heart__1 {
   font-weight: 700;
 }
-.fill_heart:hover .heart-2 {
+.page-menu__heart:hover .heart__2 {
   -webkit-animation: fill 0.5s ease-out forwards;
   animation: fill 0.5s ease-out forwards;
+  font-weight: 800;
 }
 
-.heart-1 {
+.heart__1 {
   position: absolute;
   color: black;
   font-size: 1.5rem;
   display: block;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
-.heart-1:before {
+.heart__1:before {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background: none;
   display: inline-block;
   font-weight: bold;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-
-.heart-2 {
+.heart__2 {
   font-size: 1.5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.heart-2:before {
+.heart__2:before {
   display: inline-block;
   background: -webkit-linear-gradient(238deg, #9b59dc 0%, #a77fd8 39%, #ff79da 85%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background: transparent;
-}
-
-.heart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.heart h4 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.fill:hover {
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  cursor: pointer;
-  background-blend-mode: lighten;
 }
 
 .discovery__button {
@@ -220,14 +198,6 @@ a {
     margin-right: 0rem;
   }
 }
-@keyframes progresssion {
-  0% {
-    transform: scale(0.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes fill {
   0% {
     -webkit-transform: scale(0);
@@ -236,10 +206,9 @@ a {
     background-color: transparent;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
     opacity: 1;
-    font-weight: 700;
   }
 }
 main {
@@ -535,7 +504,7 @@ main {
   width: 3rem;
   background-color: #99E2D0;
 }
-.page-menu .fill_heart {
+.page-menu .page-menu__heart {
   position: relative;
   margin-left: 8%;
   top: 25px;
