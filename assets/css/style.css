@@ -99,8 +99,8 @@ a {
   font-weight: 700;
 }
 .fill_heart:hover .heart-2 {
-  -webkit-animation: fill 1900ms ease-out forwards;
-  animation: fill 1500ms ease-out forwards;
+  -webkit-animation: fill 0.5s ease-out forwards;
+  animation: fill 0.5s ease-out forwards;
 }
 
 .heart-1 {
@@ -113,8 +113,12 @@ a {
   opacity: 1;
 }
 .heart-1:before {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background: none;
   display: inline-block;
-  background: -webkit-linear-gradient(238deg, black 0%, black 39%, black 85%);
+  font-weight: bold;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -133,20 +137,6 @@ a {
   -webkit-background: transparent;
 }
 
-@keyframes fill {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    background-color: transparent;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    font-weight: 700;
-  }
-}
 .heart {
   display: flex;
   justify-content: space-between;
@@ -510,15 +500,10 @@ main {
   width: 3rem;
   background-color: #99E2D0;
 }
-.page-menu .item__card-icon {
+.page-menu .fill_heart {
   position: relative;
   margin-left: 8%;
-  top: -15px;
-}
-@media screen and (min-width: 992px) {
-  .page-menu .item__card-icon {
-    margin-left: 4%;
-  }
+  top: 25px;
 }
 .page-menu .discovery__button {
   position: relative;

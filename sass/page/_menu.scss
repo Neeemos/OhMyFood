@@ -78,15 +78,12 @@
             background-color: $color-tertiaire;
         }
 
-        .item__card-icon {
+        .fill_heart {
             position: relative;
             margin-left: 8%;
-            top: -15px;
+            top: 25px;
 
-            @include media-td {
-                margin-left: 4%;
-
-            }
+   
         }
 
         .discovery {
