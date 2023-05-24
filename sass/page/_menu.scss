@@ -6,6 +6,10 @@
     .mainMenu {
         margin-bottom: 0%;
         margin-top: -35px;
+        @include media-md {
+            width: 80%;
+            margin: -35px auto 0;
+        }
     }
 
 
