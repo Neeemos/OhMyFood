@@ -167,6 +167,7 @@ a {
 }
 .discovery__button:hover {
   opacity: 0.8;
+  box-shadow: 3PX 2px 15px 7px rgba(80, 80, 80, 0.25);
 }
 
 @-webkit-keyframes loading {
@@ -479,6 +480,33 @@ main {
   display: flex;
   flex-direction: column;
 }
+.page-menu__listing:nth-child(2) .item:nth-child(2) {
+  animation-delay: 0s;
+}
+.page-menu__listing:nth-child(2) .item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.page-menu__listing:nth-child(2) .item:nth-child(4) {
+  animation-delay: 1s;
+}
+.page-menu__listing:nth-child(3) .item:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.page-menu__listing:nth-child(3) .item:nth-child(3) {
+  animation-delay: 2s;
+}
+.page-menu__listing:nth-child(3) .item:nth-child(4) {
+  animation-delay: 2.5s;
+}
+.page-menu__listing:nth-child(4) .item:nth-child(2) {
+  animation-delay: 3s;
+}
+.page-menu__listing:nth-child(4) .item:nth-child(3) {
+  animation-delay: 3.5s;
+}
+.page-menu__listing:nth-child(4) .item:nth-child(4) {
+  animation-delay: 4s;
+}
 @media screen and (min-width: 992px) {
   .page-menu__listing {
     padding: 0 15%;
@@ -520,31 +548,34 @@ main {
   overflow: hidden;
 }
 .page-menu .item:nth-child(1) {
-  animation: slideIn 0.5s ease-out forwards 0.2s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(2) {
-  animation: slideIn 0.5s ease-out forwards 0.4s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(3) {
-  animation: slideIn 0.5s ease-out forwards 0.6s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(4) {
-  animation: slideIn 0.5s ease-out forwards 0.8s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(5) {
-  animation: slideIn 0.5s ease-out forwards 1s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(6) {
-  animation: slideIn 0.5s ease-out forwards 1.2s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(7) {
-  animation: slideIn 0.5s ease-out forwards 1.4s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(8) {
-  animation: slideIn 0.5s ease-out forwards 1.6s;
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item:nth-child(9) {
-  animation: slideIn 0.5s ease-out forwards 1.8s;
+  animation: slideIn 1s ease-out forwards;
+}
+.page-menu .item:nth-child(10) {
+  animation: slideIn 1s ease-out forwards;
 }
 .page-menu .item__info {
   padding: 0.9rem 0 0.9rem 0.9rem;

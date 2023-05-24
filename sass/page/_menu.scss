@@ -38,6 +38,7 @@
             display: flex;
             margin: 0 auto;
             justify-content: space-evenly;
+
             @include media-md {
                 justify-content: center;
             }
@@ -54,6 +55,49 @@
         &__listing {
             display: flex;
             flex-direction: column;
+
+            &:nth-child(2) {
+                .item {
+                  &:nth-child(2) {
+                    animation-delay: 0s;
+                  }
+                  &:nth-child(3) {
+                    animation-delay: 0.5s;
+                  }
+                  &:nth-child(4) {
+                    animation-delay: 1s;
+                  }
+                }
+              }
+            
+              &:nth-child(3) {
+                .item {
+                  &:nth-child(2) {
+                    animation-delay: 1.5s;
+                  }
+                  &:nth-child(3) {
+                    animation-delay: 2s;
+                  }
+                  &:nth-child(4) {
+                    animation-delay: 2.5s;
+                  }
+                }
+              }
+              &:nth-child(4) {
+                .item {
+                  &:nth-child(2) {
+                    animation-delay: 3s;
+                  }
+                  &:nth-child(3) {
+                    animation-delay: 3.5s;
+                  }
+                  &:nth-child(4) {
+                    animation-delay: 4s;
+                  }
+                }
+              }
+              
+
 
             @include media-td {
                 padding: 0 15%;
@@ -83,7 +127,7 @@
             margin-left: 8%;
             top: 25px;
 
-   
+
         }
 
         .discovery {
@@ -100,14 +144,13 @@
             border-radius: 15px;
             margin: 0.5rem;
             line-height: 1.15;
-            $item-count: 9;
             opacity: 0;
 
-            @for $i from 1 through $item-count {
+            @for $i from 1 through 10 {
                 &:nth-child(#{$i}) {
-                    animation: slideIn 0.5s ease-out forwards ($i * 0.2s);
+                  animation: slideIn 1s ease-out forwards ;
                 }
-            }
+              }
 
             overflow: hidden;
 
