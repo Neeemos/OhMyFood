@@ -7,13 +7,13 @@
 
   &:hover {
     .heart {
-      &__1 {
+      &__empty {
         font-weight: 700;
       }
     }
 
     .heart {
-      &__2 {
+      &__full {
         -webkit-animation: fill 0.5s ease-out forwards;
         animation: fill 0.5s ease-out forwards;
         font-weight: 800;
@@ -23,7 +23,7 @@
 }
 
 .heart {
-  &__1 {
+  &__empty {
     position: absolute;
     color: black;
     font-size: 1.5rem;
@@ -41,7 +41,7 @@
     }
   }
 
-  &__2 {
+  &__full {
     font-size: 1.5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

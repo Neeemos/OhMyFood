@@ -96,23 +96,23 @@ a {
   font-size: 0.7rem;
   cursor: pointer;
 }
-.page-menu__heart:hover .heart__1 {
+.page-menu__heart:hover .heart__empty {
   font-weight: 700;
 }
-.page-menu__heart:hover .heart__2 {
+.page-menu__heart:hover .heart__full {
   -webkit-animation: fill 0.5s ease-out forwards;
   animation: fill 0.5s ease-out forwards;
   font-weight: 800;
 }
 
-.heart__1 {
+.heart__empty {
   position: absolute;
   color: black;
   font-size: 1.5rem;
   display: block;
   opacity: 1;
 }
-.heart__1:before {
+.heart__empty:before {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -120,13 +120,13 @@ a {
   display: inline-block;
   font-weight: bold;
 }
-.heart__2 {
+.heart__full {
   font-size: 1.5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.heart__2:before {
+.heart__full:before {
   display: inline-block;
   background: -webkit-linear-gradient(238deg, #9b59dc 0%, #a77fd8 39%, #ff79da 85%);
   -webkit-background-clip: text;
@@ -206,8 +206,8 @@ a {
     background-color: transparent;
   }
   100% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     opacity: 1;
   }
 }
