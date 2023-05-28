@@ -8,8 +8,8 @@
     position: fixed;
     opacity: 1;
     background-color: #fff;
-    -webkit-animation: loading 3s ease-in-out forwards;
-    animation: loading 3s ease-in-out forwards;
+    -webkit-animation: loading 2s ease-in-out forwards;
+    animation: loading 2s ease-in-out forwards;
 
     .loader-spinner {
 
@@ -35,42 +35,3 @@
     }
 }
 
-@-webkit-keyframes loading {
-    0% {
-        visibility: visible;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes loading {
-    0% {
-        visibility: visible;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@-webkit-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}

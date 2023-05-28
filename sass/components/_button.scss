@@ -1,0 +1,18 @@
+.discovery {
+    &__button {
+        display: inline-block;
+        padding: 15px;
+        background: linear-gradient(to top, $color-primaire 0%, $color-secondaire 95%);
+        color: #FFF;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0 4px 10px rgba(80, 80, 80, 0.25);
+        text-decoration: none;
+        transition: all 1s ease;
+    }
+
+    &__button:hover {
+        opacity: 0.80;
+        box-shadow: 3PX 2px 15px 7px rgba(80, 80, 80, 0.25);
+    }
+}

@@ -2,30 +2,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 80px;
     box-shadow: 0 1px 5px -2px rgba(80, 80, 80, 0.70);
-        &__logo {
-            width: 150px;
-            @mixin media-td {
-                width: 230px;
-            }
+
+    &__logo {
+        width: 12rem;
+
+        @mixin media-td {
+            width: 230px;
         }
+    }
 
 }
-.location {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #EAEAEA;
-    color: #353535;
-    font-size: 0.8rem;
-        &__text {
-            margin-left: 15px;
-            font-size: 1.3em;
-        }
-        &__icon {
-            font-size: 1.3em;
-        }
+
+.headerBar {
+    font-family: "shrikhand", "cursive";
+    text-align: center;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+        position: absolute;
+        font-family: "font Awesome 5 free";
+        font-weight: 900;
+        content: "\f060";
+        left: 25px;
+        bottom: 30%;
+        font-size: 1.3rem;
+    }
+
+    &__title {
+        font-weight: normal;
+        padding: 15px;
+        font-size: 35px;
+        background-color: white;
+        margin: 0;
+    }
 }

@@ -1,29 +1,56 @@
- .item {
-    &__icon {
-            font-size: 1.5rem;
-            position: absolute;
-            right: 7%;
-            bottom: 15%;
-            background-image: linear-gradient(180deg, #9356DC 10%, #FF79DA 60%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: opacity 0.5s ease-out;
+.page-menu__heart {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  font-size: 0.7rem;
+  cursor: pointer;
 
-            &:hover {
-                opacity: 0;
-            }
-        }
+  &:hover {
+    .heart {
+      &__empty {
+        font-weight: 700;
+      }
+    }
 
-        &__icon--active {
-            font-size: 1.5rem;
-            position: absolute;
-            right: 7%;
-            bottom: 15%;
-            opacity: 0;
-            color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    .heart {
+      &__full {
+        -webkit-animation: fill 0.5s ease-out forwards;
+        animation: fill 0.5s ease-out forwards;
+        font-weight: 800;
+      }
+    }
+  }
+}
 
-            &:hover {
-                opacity: 1;
-            }
-        }
- }
+.heart {
+  &__empty {
+    position: absolute;
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+   
+    opacity: 1;
+
+    &:before {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      background: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+
+  &__full {
+    font-size: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+
+    &:before {
+      display: inline-block;
+      background: -webkit-linear-gradient(238deg, #9b59dc 0%, #a77fd8 39%, #ff79da 85%);
+      -webkit-background-clip: text;
+    }
+  }
+}
