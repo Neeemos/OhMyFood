@@ -10,7 +10,7 @@ L’équipe commerciale a déjà réussi à convaincre 4 restaurateurs d’utili
 À deux, vous avez pu établir ce brief créatif pour rassembler toutes les informations clés du projet de développement du site.
 
 
-## Installation [img](http://www.w3.org/Icons/valid-html20.png)
+## Installation ![logo](http://www.w3.org/Icons/valid-html20.png)
 
 Install OhMyFood with npm
 
