@@ -1,5 +1,5 @@
 ![logo](https://user.oc-static.com/upload/2022/06/22/16559011566667_FR_1117_P4_Banner-Ohmyfood.png)
-# OC - P3 -  OhmyFood  ![logo](http://www.w3.org/Icons/valid-html20.png)
+# OC - P3 -  OhmyFood  ![logo](http://www.w3.org/Icons/valid-html20.png)  ![logo][(http://www.w3.org/Icons/valid-html20.png](http://www.w3.org/Icons/valid-css.png))
 
 Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
 
