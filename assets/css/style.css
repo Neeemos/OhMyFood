@@ -448,9 +448,14 @@ main {
 }
 .page-menu__restaurant {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: "shrikhand", "cursive";
   font-weight: lighter;
+}
+@media screen and (min-width: 668px) {
+  .page-menu__restaurant {
+    font-size: 1.5rem;
+  }
 }
 .page-menu__listing {
   display: flex;
@@ -507,7 +512,12 @@ main {
 .page-menu .page-menu__heart {
   position: relative;
   margin-left: 8%;
-  top: 25px;
+  top: 15px;
+}
+@media screen and (min-width: 668px) {
+  .page-menu .page-menu__heart {
+    top: 25px;
+  }
 }
 .page-menu .discovery__button {
   position: relative;
@@ -521,6 +531,7 @@ main {
   margin: 0.5rem;
   line-height: 1.15;
   opacity: 0;
+  height: 65px;
   overflow: hidden;
 }
 .page-menu .item:nth-child(1) {
@@ -574,6 +585,8 @@ main {
   width: 5rem;
   opacity: 1;
   display: none;
+  min-width: 65px;
+  height: 65px;
 }
 .page-menu .item__check .fas.fa-check {
   top: 30%;
