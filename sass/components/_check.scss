@@ -1,12 +1,10 @@
 .item {
+
     &__check {
-        //   display: none
-        position: initial;
-        justify-content: center;
+
         border-radius: 0 1rem 1rem 0;
         background-color: $color-tertiaire ;
-        opacity: 1; // Initial opacity set to 0
-        display: none;
+        display: none; // Important
         min-width: 65px;
         height: 65px;
 
@@ -23,7 +21,8 @@
 
     &:hover .item__check {
         animation: slideRight 0.6s;
-        display: flex;
+        display: flex; /// Important
+        justify-content: center;
 
     }
 }
