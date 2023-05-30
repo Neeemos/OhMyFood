@@ -191,33 +191,7 @@
           padding: 0.9rem 0 0.9rem 0.9rem;
         }
 
-        &__check {
-          //   display: none
-          position: initial;
-          justify-content: center;
-          border-radius: 0 1rem 1rem 0;
-          background-color: $color-tertiaire ;
-          opacity: 1; // Initial opacity set to 0
-          display: none;
-          min-width: 65px;
-          height: 65px;
 
-          .fas.fa-check {
-            top: 30%;
-            position: fixed;
-            border: 2px solid white;
-            border-radius: 100%;
-            background-color: white;
-            color: $color-tertiaire;
-            padding: 4px;
-          }
-        }
-
-        &:hover .item__check {
-          animation: slideRight 0.6s;
-          display: flex;
-
-        }
 
         &__title {
           margin: 0;
